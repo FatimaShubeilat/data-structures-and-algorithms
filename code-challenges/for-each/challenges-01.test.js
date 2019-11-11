@@ -10,12 +10,10 @@ Then, write a function named speaker that takes in a string and a callback funct
 
 const greeting = (word) => {
   // Solution code here...
-  return word.toUpperCase();
 };
 
 const speaker = (message, callback) => {
   // Solution code here...
-  return callback(message);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -36,16 +34,10 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
-  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  for(let i = 0; i <times ; i++){
-    callback(arr,num);
-  }
-  
-
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -62,18 +54,10 @@ Return the modified array.
 
 const removeOne = (num, arr) => {
   // Solution code here...
-  if(num % 3 === 2){
-    return arr.pull(value);
-  }
-  
 };
 
 const removeElements = (arr, callback) => {
   // Solution code here...
-  for(let i = 0; i < arr.length ; i++){
-    callback(element,arr);
-  }
-
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,9 +68,6 @@ Write a function named removeWithForEach that produces the same output as challe
 
 const removeWithForEach = (arr, callback) => {
   // Solution code here...
-  arr.forEach(element => {
-    callback(element,arr);
-});
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -99,9 +80,8 @@ This function should use forEach again, but rather than taking in a callback as 
 This anonymous function should accept up to three arguments: the element, the index, and the array.
 ------------------------------------------------------------------------------------------------ */
 
-const removeWithAnon = (element, index, arr) => {
+const removeWithAnon = (arr) => {
   // Solution code here...
-    
 };
 
 /* ------------------------------------------------------------------------------------------------
