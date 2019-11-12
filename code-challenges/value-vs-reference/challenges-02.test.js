@@ -10,7 +10,7 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 
 const appendTheEnd = (str) => {
   // Solution code here...
-  return str + ' The end.';
+  return str.concat(' The end.');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -89,9 +89,10 @@ console.log(a) prints [1, 2, 3, 4]
 
 const append = (arr1, arr2) => {
   // Solution code here...
-
-};
-
+  arr2.forEach( function(arr1,arr2) {
+    arr1.push(arr2);
+});
+}
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
