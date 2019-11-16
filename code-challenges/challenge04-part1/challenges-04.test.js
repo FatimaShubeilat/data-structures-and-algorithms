@@ -33,7 +33,7 @@ const isCapitalized = (str) => {
     
     let firstLetter = /\b[A-Z]\w*/g;
     let equalArray = str.match(firstLetter);
-    return equalArray ? equalArray :[]; // then :[] store it in an array
+    return  equalArray ; 
  };
 
 /* ------------------------------------------------------------------------------------------------
