@@ -8,6 +8,8 @@ Write a function named sortBackwards that takes in an array of numbers and retur
 
 const sortBackwards = (arr) => {
   // Solution code here...
+  return arr.sort( (a,b) =>  b -a );
+    
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -22,6 +24,9 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 
 const alphabetize = (arr) => {
   // Solution code here...
+  return arr.sort(); 
+  //(a,b) =>  b.toUpperCase() - a.toUpperCase() 
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -32,6 +37,14 @@ Write a function named sortByLength that takes in an array of strings and return
 
 const sortByLength = (arr) => {
   // Solution code here...
+  // let arryStringLength = [];
+  // arr.forEach(element => {
+  //  let stringlength = arr[element].length;
+  //   arryStringLength.push(stringlength);
+  // });
+  // console.log(arryStringLength.sort());
+  // return arryStringLength.sort();
+ return arr.sort((a,b) => a.length - b.length );
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -44,7 +57,10 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 
 const alphabetizeBetter = (arr) => {
   // Solution code here...
-};
+  // return arr.sort((a,b) => );
+    return arr.sort((a, b) => (a.toLowerCase() < b.toLowerCase() ? -1 : 1));
+  // Solution code here...
+    };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -61,6 +77,7 @@ Here is an example of the input:
 
 const sortByPrice = (arr) => {
   // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
